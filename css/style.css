@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root{
-    --main-color:#ff9410;
+    --main-color:#ffca1d;
     --black:#13131a;
     --bg:#010103;
     --border:.1rem solid rgba(255,255,255,.3);
@@ -64,8 +64,8 @@ section{
     display: inline-block;
     padding:.9rem 3rem;
     font-size: 1.7rem;
-    color:rgb(0, 0, 0);
-    background: var(--main-color);
+    color:#000000;
+    background-color: #ffca1d;
     cursor: pointer;
     border-radius: 20px;
     font-weight: 500;
@@ -94,7 +94,7 @@ section{
 .header .navbar a{
     margin:0 1rem;
     font-size: 1.6rem;
-    color:#fff;
+    color:#ffca1d;
 }
 
 .header .navbar a:hover{
@@ -248,6 +248,10 @@ section{
     flex:1 1 45rem;
 }
 
+form{
+    background-color: #ffca1d;
+}
+
 .about .row .image img{
     width: 100%;
 }
@@ -268,6 +272,10 @@ section{
     line-height: 1.8;
 }
 
+.menu{
+    background-color: #ffca1d;
+}
+
 .menu .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -280,7 +288,7 @@ section{
     text-align: center;
     border-radius: 10px;
     border:var(--border);    
-    background-color: #010103;
+    background-color: #000000;
 }
 
 .menu .box-container .box img{
@@ -288,13 +296,13 @@ section{
 }
 
 .menu .box-container .box h3{
-    color: #fff;
+    color:#ffca1d;
     font-size: 2rem;
     padding:1rem 0;
 }
 
 .menu .box-container .box .price{
-    color: #fff;
+    color: #ffca1d;
     font-size: 2.5rem;
     padding:.5rem 0;
 }
@@ -401,9 +409,9 @@ section{
     color:var(--main-color);
 }
 
+
 .contact .row{
     display: flex;
-    background:var(--black);
     flex-wrap: wrap;
     gap:1rem;
 }
@@ -415,6 +423,7 @@ section{
 }
 
 .contact .row form{
+    background-color: #ffca1d;
     flex:1 1 45rem;
     padding:5rem 2rem;
     text-align: center;
@@ -423,7 +432,7 @@ section{
 .contact .row form h3{
     text-transform: uppercase;
     font-size: 3.5rem;
-    color:#fff;
+    color:#ffca1d;
 }
 
 .contact .row form .inputBox{
@@ -436,9 +445,13 @@ section{
 }
 
 .contact .row form .inputBox span{
-    color:#fff;
+    color:#ffca1d;
     font-size: 2rem;
     padding-left: 2rem;
+}
+
+form ::placeholder{
+    color: #ffca1d;
 }
 
 .contact .row form .inputBox input{
@@ -500,12 +513,12 @@ section{
 .blogs .box-container .box .content p{
     font-size: 1.6rem;
     line-height: 1.8;
-    color:#ccc;
+    color:#ffca1d;
     padding:1rem 0;
 }
 
 .footer{
-    background:#ff9410;
+    background:#313131;
     text-align: center;
 }
 
@@ -519,8 +532,8 @@ section{
     width: 5rem;
     line-height: 5rem;
     font-size: 2rem;
-    background-color: #010103;
-    color:#ff9410;
+    background-color: #ffca1d;
+    color:#000000;
     border:var(--border1);
     margin:.3rem;
     border-radius: 50%;
@@ -537,8 +550,8 @@ section{
 
 .footer .links a{
     padding:.7rem 2rem;
-    background-color: #010103;
-    color:#ff9410;
+    background-color: #ffca1d;
+    color:#000000;
     border:var(--border1);
     font-size: 2rem;
     border-radius: 20px;
