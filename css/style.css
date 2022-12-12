@@ -440,6 +440,9 @@ form ::placeholder{
     color:var(--main-color);
 }
 
+
+
+
 @media (max-width:991px){
 
     html{

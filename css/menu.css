@@ -1,0 +1,254 @@
+:root {
+    --main-color: #ffca1d;
+    --black: #13131a;
+    --bg: #010103;
+    --border: .1rem solid rgba(255, 255, 255, .3);
+    --border1: .1rem solid rgba(0, 0, 0, 0.3);
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+
+html {
+    font-size: 80%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body {
+    background: var(--bg);
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+ html {
+	 font-family: Arial;
+	 font-size: 16px;
+	 background: #292825;
+}
+ .sidebar {
+	 position: fixed;
+	 width: 25%;
+	 height: 100vh;
+	 background: #000000;
+	 font-size: 1.20em;
+     color: #ffca1d;
+}
+ .nav {
+	 position: relative;
+	 margin: 0 15%;
+	 text-align: right;
+	 top: 50%;
+	 transform: translateY(-50%);
+	 font-weight: bold;
+}
+ .nav ul {
+	 list-style: none;
+}
+ .nav ul li {
+	 position: relative;
+	 margin: 3.2em 0;
+}
+ .nav ul li a {
+	 line-height: 5em;
+	 text-transform: uppercase;
+	 text-decoration: none;
+	 letter-spacing: 0.4em;
+	 color: rgba(255, 255, 255, 0.35);
+	 display: block;
+	 transition: all ease-out 300ms;
+}
+ .nav ul li.active a {
+	 color: #ffca1d;
+}
+ .nav ul li:not(.active)::after {
+	 opacity: 0.2;
+}
+ .nav ul li:not(.active):hover a {
+	 color: rgba(255, 255, 255, 0.75);
+}
+ .nav ul li::after {
+	 content: '';
+	 position: absolute;
+	 width: 100%;
+	 height: 0.2em;
+	 background: black;
+	 left: 0;
+	 bottom: 0;
+	 background-image: linear-gradient(to right, #5e42a6, #b74e91);
+}
+ .twitter {
+	 position: relative;
+	 width: 75%;
+	 float: right;
+	 height: 100vh;
+}
+ .twitter .container {
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+	 justify-content: center;
+	 height: 100%;
+}
+ .twitter a {
+	 position: relative;
+}
+ .twitter a img {
+	 width: 48px;
+	 height: 48px;
+}
+ .twitter p {
+	 text-transform: uppercase;
+	 font-size: 1em;
+	 letter-spacing: 0.1em;
+	 color: #ffca1d;
+	 font-weight: bold;
+	 margin-top: 20px;
+}
+ 
+
+
+
+.footer {
+    background: #313131;
+    text-align: center;
+}
+
+.footer .share {
+    padding: 1rem 0;
+
+}
+
+
+.footer .share a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    background-color: #ffca1d;
+    color: #000000;
+    border: var(--border1);
+    margin: .3rem;
+    border-radius: 50%;
+}
+
+.footer .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+
+}
+
+.footer .links a {
+    padding: .7rem 2rem;
+    background-color: #ffca1d;
+    color: #000000;
+    border: var(--border1);
+    font-size: 2rem;
+    border-radius: 20px;
+}
+
+
+
+.footer .credit {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+
+.footer .credit span {
+    color: var(--main-color);
+}
+
+
+
+
+@media (max-width:991px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+
+    .home {
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3 {
+        font-size: 4.5rem;
+    }
+
+    .home .content p {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width:450px) {
+
+
+    html {
+        font-size: 50%;
+
+    }
+
+    .home {
+        background-image: url(../images/back.jpg);
+    }
+
+    .navb {
+        text-align: center;
+
+    }
+
+
+}
