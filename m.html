@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="menu2.css">
-    <script src="jquery-3.6.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -74,37 +73,38 @@
     <div class="container">
 
         <div class="menu">
-            <section  id="burgers">
+            <section id="burgers">
                 <h2 class="menu-group-heading">
                     Burgers
                 </h2>
                 <div class="menu-group">
                     <div class="menu-item">
-    
-                        <div class="menu-item-text">
+
+                        <div class="menu-item-text" id="atb">
                             <h3 class="menu-item-heading" style="color: #ff721a;">
                                 <span class="menu-item-name" style="color: #ff721a;">Aloo Tikki Burger <img
                                         src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
                                         width="35px"></span>
-    
+
                                 <span class="menu-item-price">₹40</span>
                             </h3>
                             <p class="menu-item-description" style="color: #ffffff;">
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
+                            <button id="plbtn"  class="plus-butn" type="button" name="button">
                                 <img src="plus.svg" alt="" />
                             </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="minus-butn" type="button" name="button">
+                            <input id="mbtn" type="text" name="name" value="0" style="text-align:center;">
+                            <button  class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
                             </button>
+                            <button onclick="addtocart()"  style="height: 25px; width: 25px; margin-bottom: 10px;"></button>
                             <hr>
                         </div>
                     </div>
                     <div class="menu-item">
-    
+
                         <div class="menu-item-text">
                             <h3 class="menu-item-heading" style="color: #ff721a;">
                                 <span class="menu-item-name" style="color: #ff721a;">Herb Chilli Potato Burger<img
@@ -116,18 +116,18 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
                     </div>
                     <div class="menu-item">
-    
+
                         <div class="menu-item-text">
                             <h3 class="menu-item-heading" style="color: #ff721a;">
                                 <span class="menu-item-name" style="color: #ff721a;">Veg Burger<img
@@ -139,18 +139,18 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
                     </div>
                     <div class="menu-item">
-    
+
                         <div class="menu-item-text">
                             <h3 class="menu-item-heading" style="color: #ff721a;">
                                 <span class="menu-item-name" style="color: #ff721a;">Schezwan Burger<img
@@ -162,18 +162,18 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
                     </div>
                     <div class="menu-item">
-    
+
                         <div class="menu-item-text">
                             <h3 class="menu-item-heading" style="color: #ff721a;">
                                 <span class="menu-item-name" style="color: #ff721a;">Paneer Burger<img
@@ -185,18 +185,18 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
                     </div>
                     <div class="menu-item">
-    
+
                         <div class="menu-item-text">
                             <h3 class="menu-item-heading" style="color: #ff721a;">
                                 <span class="menu-item-name" style="color: #ff721a;">Chicken Schezwan Burger<img
@@ -207,18 +207,18 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
                     </div>
                     <div class="menu-item">
-    
+
                         <div class="menu-item-text">
                             <h3 class="menu-item-heading" style="color: #ff721a;">
                                 <span class="menu-item-name" style="color: #ff721a;">Chicken Burger<img src="./nvg.png"
@@ -229,352 +229,352 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
                     </div>
                 </div>
             </section>
-            <section  id="sandwitches">
+            <section id="sandwitches">
                 <h2 class="menu-group-heading">
                     Sandwitches
                 </h2>
                 <div class="menu-group">
                     <div class="menu-item">
-    
+
                         <div class="menu-item-text">
                             <h3 class="menu-item-heading" style="color: #15B6FC;">
                                 <span class="menu-item-name" style="color: #15B6FC;">Veg Sandwitch <img
                                         src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
                                         width="35px"></span>
-    
+
                                 <span class="menu-item-price">₹40</span>
                             </h3>
                             <p class="menu-item-description" style="color: #ffffff;">
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
                     </div>
                     <div class="menu-item">
-    
+
                         <div class="menu-item-text">
                             <h3 class="menu-item-heading" style="color: #15B6FC;">
                                 <span class="menu-item-name" style="color: #15B6FC;">Tadka Sandwitch <img
                                         src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
                                         width="35px"></span>
-    
+
                                 <span class="menu-item-price">₹45</span>
                             </h3>
                             <p class="menu-item-description" style="color: #ffffff;">
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
                     </div>
                     <div class="menu-item">
-    
+
                         <div class="menu-item-text">
                             <h3 class="menu-item-heading" style="color: #15B6FC;">
                                 <span class="menu-item-name" style="color: #15B6FC;">Schezwan Sandwitch <img
                                         src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
                                         width="35px"></span>
-    
+
                                 <span class="menu-item-price">₹45</span>
                             </h3>
                             <p class="menu-item-description" style="color: #ffffff;">
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
                     </div>
                     <div class="menu-item">
-    
+
                         <div class="menu-item-text">
                             <h3 class="menu-item-heading" style="color: #15B6FC;">
                                 <span class="menu-item-name" style="color: #15B6FC;">Chocolate Sandwitch <img
                                         src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
                                         width="35px"></span>
-    
+
                                 <span class="menu-item-price">₹55</span>
                             </h3>
                             <p class="menu-item-description" style="color: #ffffff;">
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
                     </div>
                     <div class="menu-item">
-    
+
                         <div class="menu-item-text">
                             <h3 class="menu-item-heading" style="color: #15B6FC;">
                                 <span class="menu-item-name" style="color: #15B6FC;">Paneer Sandwitch <img
                                         src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
                                         width="35px"></span>
-    
+
                                 <span class="menu-item-price">₹55</span>
                             </h3>
                             <p class="menu-item-description" style="color: #ffffff;">
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
                     </div>
                     <div class="menu-item">
-    
+
                         <div class="menu-item-text">
                             <h3 class="menu-item-heading" style="color: #15B6FC;">
                                 <span class="menu-item-name" style="color: #15B6FC;">Corn Sandwitch <img
                                         src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
                                         width="35px"></span>
-    
+
                                 <span class="menu-item-price">₹45</span>
                             </h3>
                             <p class="menu-item-description" style="color: #ffffff;">
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
                     </div>
                     <div class="menu-item">
-    
+
                         <div class="menu-item-text">
                             <h3 class="menu-item-heading" style="color: #15B6FC;">
                                 <span class="menu-item-name" style="color: #15B6FC;">Cutlet Sandwitch <img
                                         src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
                                         width="35px"></span>
-    
+
                                 <span class="menu-item-price">₹60</span>
                             </h3>
                             <p class="menu-item-description" style="color: #ffffff;">
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
                     </div>
                     <div class="menu-item">
-    
+
                         <div class="menu-item-text">
                             <h3 class="menu-item-heading" style="color: #15B6FC;">
                                 <span class="menu-item-name" style="color: #15B6FC;">Pizza Sandwitch <img
                                         src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
                                         width="35px"></span>
-    
+
                                 <span class="menu-item-price">₹60</span>
                             </h3>
                             <p class="menu-item-description" style="color: #ffffff;">
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
                     </div>
                     <div class="menu-item">
-    
+
                         <div class="menu-item-text">
                             <h3 class="menu-item-heading" style="color: #15B6FC;">
                                 <span class="menu-item-name" style="color: #15B6FC;">Garlic Toast <img
                                         src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
                                         width="35px"></span>
-    
+
                                 <span class="menu-item-price">₹40</span>
                             </h3>
                             <p class="menu-item-description" style="color: #ffffff;">
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
                     </div>
                     <div class="menu-item">
-    
+
                         <div class="menu-item-text">
                             <h3 class="menu-item-heading" style="color: #15B6FC;">
                                 <span class="menu-item-name" style="color: #15B6FC;"> Tadka Toast <img
                                         src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
                                         width="35px"></span>
-    
+
                                 <span class="menu-item-price">₹40</span>
                             </h3>
                             <p class="menu-item-description" style="color: #ffffff;">
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
                     </div>
                     <div class="menu-item">
-    
+
                         <div class="menu-item-text">
                             <h3 class="menu-item-heading" style="color: #15B6FC;">
                                 <span class="menu-item-name" style="color: #15B6FC;"> Bread Butter <img
                                         src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
                                         width="35px"></span>
-    
+
                                 <span class="menu-item-price">₹30</span>
                             </h3>
                             <p class="menu-item-description" style="color: #ffffff;">
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
                     </div>
                     <div class="menu-item">
-    
+
                         <div class="menu-item-text">
                             <h3 class="menu-item-heading" style="color: #15B6FC;">
                                 <span class="menu-item-name" style="color: #15B6FC;">Chicket Cutlet Sandwitch <img
                                         src="./nvg.png" alt="" height="35px" width="35px"></span>
-    
+
                                 <span class="menu-item-price">₹80</span>
                             </h3>
                             <p class="menu-item-description" style="color: #ffffff;">
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
                     </div>
                     <div class="menu-item">
-    
+
                         <div class="menu-item-text">
                             <h3 class="menu-item-heading" style="color: #15B6FC;">
                                 <span class="menu-item-name" style="color: #15B6FC;">Chicken Schezwan Sandwitch <img
                                         src="./nvg.png" alt="" height="35px" width="35px"></span>
-    
+
                                 <span class="menu-item-price">₹80</span>
                             </h3>
                             <p class="menu-item-description" style="color: #ffffff;">
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
                     </div>
                     <div class="menu-item">
-    
+
                         <div class="menu-item-text">
                             <h3 class="menu-item-heading" style="color: #15B6FC;">
-                                <span class="menu-item-name" style="color: #15B6FC;">Egg Mayo Sandwitch <img src="./nvg.png"
-                                        alt="" height="35px" width="35px"></span>
-    
+                                <span class="menu-item-name" style="color: #15B6FC;">Egg Mayo Sandwitch <img
+                                        src="./nvg.png" alt="" height="35px" width="35px"></span>
+
                                 <span class="menu-item-price">₹60</span>
                             </h3>
                             <p class="menu-item-description" style="color: #ffffff;">
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -600,12 +600,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -624,12 +624,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -648,12 +648,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -672,12 +672,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -696,12 +696,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -720,12 +720,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -735,8 +735,7 @@
                         <div class="menu-item-text">
                             <h3 class="menu-item-heading" style="color: #D65F10;">
                                 <span class="menu-item-name" style="color: #D65F10;"> Chicken Cheese Pizza <img
-                                        src="./nvg.png" alt="" height="35px"
-                                        width="35px"></span>
+                                        src="./nvg.png" alt="" height="35px" width="35px"></span>
 
                                 <span class="menu-item-price">₹120</span>
                             </h3>
@@ -744,12 +743,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -759,8 +758,7 @@
                         <div class="menu-item-text">
                             <h3 class="menu-item-heading" style="color: #D65F10;">
                                 <span class="menu-item-name" style="color: #D65F10;"> Chicken Schezwan Pizza <img
-                                        src="./nvg.png" alt="" height="35px"
-                                        width="35px"></span>
+                                        src="./nvg.png" alt="" height="35px" width="35px"></span>
 
                                 <span class="menu-item-price">₹0</span>
                             </h3>
@@ -768,12 +766,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -788,8 +786,8 @@
                     <div class="menu-item">
 
                         <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #9906F5;">
-                                <span class="menu-item-name" style="color: #9906F5;"> Pav Bhaji <img
+                            <h3 class="menu-item-heading" style="color: #fc4103;">
+                                <span class="menu-item-name" style="color: #fc4103;"> Pav Bhaji <img
                                         src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
                                         width="35px"></span>
 
@@ -799,12 +797,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -812,8 +810,8 @@
                     <div class="menu-item">
 
                         <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #9906F5;">
-                                <span class="menu-item-name" style="color: #9906F5;"> Cheese Pav Bhaji <img
+                            <h3 class="menu-item-heading" style="color: #fc4103;">
+                                <span class="menu-item-name" style="color: #fc4103;"> Cheese Pav Bhaji <img
                                         src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
                                         width="35px"></span>
 
@@ -823,12 +821,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -836,8 +834,8 @@
                     <div class="menu-item">
 
                         <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #9906F5;">
-                                <span class="menu-item-name" style="color: #9906F5;"> Wada Pav <img
+                            <h3 class="menu-item-heading" style="color: #fc4103;">
+                                <span class="menu-item-name" style="color: #fc4103;"> Wada Pav <img
                                         src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
                                         width="35px"></span>
 
@@ -847,12 +845,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -860,8 +858,8 @@
                     <div class="menu-item">
 
                         <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #9906F5;">
-                                <span class="menu-item-name" style="color: #9906F5;"> Bhaji <img
+                            <h3 class="menu-item-heading" style="color: #fc4103;">
+                                <span class="menu-item-name" style="color: #fc4103;"> Bhaji <img
                                         src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
                                         width="35px"></span>
 
@@ -871,12 +869,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -884,8 +882,8 @@
                     <div class="menu-item">
 
                         <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #9906F5;">
-                                <span class="menu-item-name" style="color: #9906F5;"> Misal <img
+                            <h3 class="menu-item-heading" style="color: #fc4103;">
+                                <span class="menu-item-name" style="color: #fc4103;"> Misal <img
                                         src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
                                         width="35px"></span>
 
@@ -895,12 +893,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -908,8 +906,8 @@
                     <div class="menu-item">
 
                         <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #9906F5;">
-                                <span class="menu-item-name" style="color: #9906F5;"> Masala Tak <img
+                            <h3 class="menu-item-heading" style="color: #fc4103;">
+                                <span class="menu-item-name" style="color: #fc4103;"> Masala Tak <img
                                         src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
                                         width="35px"></span>
 
@@ -919,12 +917,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -932,8 +930,8 @@
                     <div class="menu-item">
 
                         <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #9906F5;">
-                                <span class="menu-item-name" style="color: #9906F5;"> Sabudana Wada <img
+                            <h3 class="menu-item-heading" style="color: #fc4103;">
+                                <span class="menu-item-name" style="color: #fc4103;"> Sabudana Wada <img
                                         src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
                                         width="35px"></span>
 
@@ -943,12 +941,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -956,8 +954,8 @@
                     <div class="menu-item">
 
                         <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #9906F5;">
-                                <span class="menu-item-name" style="color: #9906F5;"> Pohe <img
+                            <h3 class="menu-item-heading" style="color: #fc4103;">
+                                <span class="menu-item-name" style="color: #fc4103;"> Pohe <img
                                         src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
                                         width="35px"></span>
 
@@ -967,12 +965,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -980,10 +978,9 @@
                     <div class="menu-item">
 
                         <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #9906F5;">
-                                <span class="menu-item-name" style="color: #9906F5;"> Chicken Biryani <img
-                                        src="./nvg.png" alt="" height="35px"
-                                        width="35px"></span>
+                            <h3 class="menu-item-heading" style="color: #fc4103;">
+                                <span class="menu-item-name" style="color: #fc4103;"> Chicken Biryani <img
+                                        src="./nvg.png" alt="" height="35px" width="35px"></span>
 
                                 <span class="menu-item-price">₹120</span>
                             </h3>
@@ -991,12 +988,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -1004,10 +1001,9 @@
                     <div class="menu-item">
 
                         <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #9906F5;">
-                                <span class="menu-item-name" style="color: #9906F5;"> Bread Omelette <img
-                                        src="./nvg.png" alt="" height="35px"
-                                        width="35px"></span>
+                            <h3 class="menu-item-heading" style="color: #fc4103;">
+                                <span class="menu-item-name" style="color: #fc4103;"> Bread Omelette <img
+                                        src="./nvg.png" alt="" height="35px" width="35px"></span>
 
                                 <span class="menu-item-price">₹60</span>
                             </h3>
@@ -1015,12 +1011,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -1028,10 +1024,9 @@
                     <div class="menu-item">
 
                         <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #9906F5;">
-                                <span class="menu-item-name" style="color: #9906F5;"> Bread Bhurji <img
-                                        src="./nvg.png" alt="" height="35px"
-                                        width="35px"></span>
+                            <h3 class="menu-item-heading" style="color: #fc4103;">
+                                <span class="menu-item-name" style="color: #fc4103;"> Bread Bhurji <img src="./nvg.png"
+                                        alt="" height="35px" width="35px"></span>
 
                                 <span class="menu-item-price">₹60</span>
                             </h3>
@@ -1039,12 +1034,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -1052,10 +1047,9 @@
                     <div class="menu-item">
 
                         <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #9906F5;">
-                                <span class="menu-item-name" style="color: #9906F5;"> Egg Rice <img
-                                        src="./nvg.png" alt="" height="35px"
-                                        width="35px"></span>
+                            <h3 class="menu-item-heading" style="color: #fc4103;">
+                                <span class="menu-item-name" style="color: #fc4103;"> Egg Rice <img src="./nvg.png"
+                                        alt="" height="35px" width="35px"></span>
 
                                 <span class="menu-item-price">₹70</span>
                             </h3>
@@ -1063,12 +1057,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -1094,12 +1088,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -1118,12 +1112,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -1142,12 +1136,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -1166,12 +1160,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -1190,12 +1184,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -1214,12 +1208,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -1238,12 +1232,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -1262,12 +1256,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -1277,8 +1271,7 @@
                         <div class="menu-item-text">
                             <h3 class="menu-item-heading" style="color: #78FECF;">
                                 <span class="menu-item-name" style="color: #78FECF;"> Chicken Nuggets <img
-                                        src="./nvg.png"alt="" height="35px"
-                                        width="35px"></span>
+                                        src="./nvg.png" alt="" height="35px" width="35px"></span>
 
                                 <span class="menu-item-price">₹80</span>
                             </h3>
@@ -1286,12 +1279,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -1301,8 +1294,7 @@
                         <div class="menu-item-text">
                             <h3 class="menu-item-heading" style="color: #78FECF;">
                                 <span class="menu-item-name" style="color: #78FECF;"> Chicken Garlic Fingers <img
-                                        src="./nvg.png" alt="" height="35px"
-                                        width="35px"></span>
+                                        src="./nvg.png" alt="" height="35px" width="35px"></span>
 
                                 <span class="menu-item-price">₹80</span>
                             </h3>
@@ -1310,12 +1302,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -1334,12 +1326,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -1358,12 +1350,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -1382,12 +1374,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -1406,12 +1398,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -1430,12 +1422,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -1444,9 +1436,8 @@
 
                         <div class="menu-item-text">
                             <h3 class="menu-item-heading" style="color: #78FECF;">
-                                <span class="menu-item-name" style="color: #78FECF;"> Non-Veg Momos <img
-                                        src="./nvg.png" alt="" height="35px"
-                                        width="35px"></span>
+                                <span class="menu-item-name" style="color: #78FECF;"> Non-Veg Momos <img src="./nvg.png"
+                                        alt="" height="35px" width="35px"></span>
 
                                 <span class="menu-item-price">₹100</span>
                             </h3>
@@ -1454,12 +1445,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -1485,12 +1476,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -1509,12 +1500,12 @@
                                 Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
                                 congue eu mauris nec, pretium tincidunt nulla.
                             </p>
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
                             <button class="minus-butn" type="button" name="button">
                                 <img src="minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="0" style="text-align:center;">
+                            <button class="plus-butn" type="button" name="button">
+                                <img src="plus.svg" alt="" />
                             </button>
                             <hr>
                         </div>
@@ -1533,9 +1524,24 @@
                 <button type="button" class="btn-close bg-warning" data-bs-dismiss="offcanvas"
                     aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body small">
-                ...
+            <div class="offcanvas-body small text-light">
+                <table class="table table-dark table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Item</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id="thed">
+                        
+                    </tbody>
+                </table>
             </div>
+
+
+
             <button type="button" class="btn btn-outline-warning">Proceed to checkout</button>
         </div>
 
@@ -1599,6 +1605,8 @@
                 $(this).toggleClass('is-active');
             });
         </script>
+
+        <script type="text/javascript" src="./js/cart.js"></script>
 </body>
 
 </html>

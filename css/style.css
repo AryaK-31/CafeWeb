@@ -44,6 +44,7 @@ body{
     background: var(--bg);
 }
 
+
 section{
     padding:2rem 7%;
 }
@@ -82,7 +83,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background:url(../images/bg.jpg) no-repeat;
+    background:url(../images/burg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -94,8 +95,7 @@ section{
 }
 
 .home .content h3{
-    font-size: 6rem;
-    text-transform: uppercase;
+    font-size: 4.5rem;
     color:#fff;
 }
 
@@ -124,6 +124,7 @@ form{
 
 .about .row .image img{
     width: 100%;
+    
 }
 .about .row .content{
     flex:1 1 45rem;
@@ -242,81 +243,9 @@ form{
     font-size: 1.5rem;
 }
 
-.review .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
-}
-
-.review .box-container .box{
-    border:var(--border);
-    text-align: center;
-    padding:3rem 2rem;
-}
-
-.review .box-container .box p{
-    font-size: 1.5rem;
-    line-height: 1.8;
-    color:#ccc;
-    padding:2rem 0;
-}
-
-.review .box-container .box .user{
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.review .box-container .box h3{
-    padding:1rem 0;
-    font-size: 2rem;
-    color:#fff;
-}
-
-.review .box-container .box .stars i{
-    font-size: 1.5rem;
-    color:var(--main-color);
-}
-
-.contact .row{
-    display: flex;
-    flex-wrap: wrap;
-    gap:1rem;
-}
-
-.contact .row .map{
-    flex:1 1 45rem;
-    width: 100%;
-    object-fit: cover;
-}
-
-.contact .row form{
-    background-color: #ffca1d;
-    flex:1 1 45rem;
-    padding:5rem 2rem;
-    text-align: center;
-}
-
-.contact .row form h3{
-    text-transform: uppercase;
-    font-size: 3.5rem;
-    color:#ffca1d;
-}
-
-.contact .row form .inputBox{
-    display: flex;
-    align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    background:var(--bg);
-    border:var(--border);
-}
-
-.contact .row form .inputBox span{
-    color:#ffca1d;
-    font-size: 2rem;
-    padding-left: 2rem;
+.car h2{
+    font-size: 4rem;
+    color: #ffca1d;
 }
 
 form ::placeholder{
@@ -330,60 +259,6 @@ form ::placeholder{
     color:#fff;
     text-transform: none;
     background:none;
-}
-
-.blogs .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
-}
-
-.blogs .box-container .box{
-    border:var(--border);    
-}
-
-.blogs .box-container .box .image{
-    height: 25rem;
-    overflow:hidden;
-    width: 100%;
-}
-
-.blogs .box-container .box .image img{
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
-}
-
-.blogs .box-container .box:hover .image img{
-    transform: scale(1.2);
-}
-
-.blogs .box-container .box .content{
-    padding:2rem;
-}
-
-.blogs .box-container .box .content .title{
-    font-size: 2.5rem;
-    line-height: 1.5;
-    color:#fff;
-}
-
-.blogs .box-container .box .content .title:hover{
-    color:var(--main-color);
-}
-
-.blogs .box-container .box .content span{
-    color:var(--main-color);
-    display: block;
-    padding-top: 1rem;
-    font-size: 2rem;
-}
-
-.blogs .box-container .box .content p{
-    font-size: 1.6rem;
-    line-height: 1.8;
-    color:#ffca1d;
-    padding:1rem 0;
 }
 
 .footer{
@@ -457,6 +332,11 @@ form ::placeholder{
         padding:2rem;
     }
 
+    .home{
+        background-image: url(../images/burg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
 
 @media (max-width:768px){
@@ -479,10 +359,15 @@ form ::placeholder{
     .home .content p{
         font-size: 1.5rem;
     }
+    .home{
+        background-image: url(../images/burg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 
 }
 
-@media (max-width:450px){
+@media (max-width:393px){
     
 
     html{
@@ -491,14 +376,121 @@ form ::placeholder{
     }
 
     .home{
-        background-image: url(../images/back.jpg);
+        background-image: url(../images/burg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .navb {
         text-align: center;
 
     }
-    
+    .home .content h3{
+        text-align: center;
+        margin-bottom: 390px;
+    }
+   
+    .home .content p {
+        font-family: "Montserrat Medium";
+        max-width: 40ch;
+        text-align: center;
+        transform: scale(0.94);
+        animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+        font-size:2.5rem;
+        color: #ffca1d;
+        font-weight: 400;
+      }
+      @keyframes scale {
+        100% {
+          transform: scale(1);
+        }
+      }
+      
+      span {
+        display: inline-block;
+        opacity: 0;
+        filter: blur(4px);
+      }
+      
+      span:nth-child(1) {
+        animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        
+      }
+      
+      span:nth-child(2) {
+        animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(3) {
+        animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(4) {
+        animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(5) {
+        animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(6) {
+        animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(7) {
+        animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(8) {
+        animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(9) {
+        animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(10) {
+        animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(11) {
+        animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(12) {
+        animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(13) {
+        animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(14) {
+        animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(15) {
+        animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(16) {
+        animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(17) {
+        animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(18) {
+        animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      @keyframes fade-in {
+        100% {
+          opacity: 1;
+          filter: blur(0);
+        }
+      }
 
 }
 
