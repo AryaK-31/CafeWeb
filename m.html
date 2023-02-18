@@ -15,16 +15,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Playball&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Playball&family=Playfair+Display:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap" rel="stylesheet">
     <script>
 
     </script>
 </head>
 
-<body style="background-color: #2f2f2f">
+<body>
 
     <nav class="navbar navbar-dark bg-warning sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand text-black fw-semi-bold" href="#">Cafe Creamy Nuts</a>
+            <a class="navbar-brand" href="#" style="color: #000000; font-size: 220%; font-family: 'Kanit', sans-serif;
+            font-family: 'Playball', cursive;
+            font-family: 'Playfair Display', serif; font-weight: 400;">Cafe Creamy Nuts</a>
             <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
                 aria-controls="offcanvasDarkNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -70,1479 +79,1539 @@
     </nav>
 
 
-    <div class="container">
+    <div style="background-color: #000000">
+        <div class="container">
 
-        <div class="menu">
-            <section id="burgers">
-                <h2 class="menu-group-heading">
-                    Burgers
-                </h2>
-                <div class="menu-group">
-                    <div class="menu-item">
+            <div class="menu">
+                <section id="burgers">
+                    <h2 class="menu-group-heading">
+                        Burgers
+                    </h2>
+                    <div class="menu-group">
+                        <div class="menu-item">
 
-                        <div class="menu-item-text" id="atb">
-                            <h3 class="menu-item-heading" style="color: #ff721a;">
-                                <span class="menu-item-name" style="color: #ff721a;">Aloo Tikki Burger <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
+                            <div class="menu-item-text" id="atb">
+                                <h3 class="menu-item-heading" style="color: #ff721a;">
+                                    <span id="b1" class="menu-item-name" style="color: #ff721a;">Aloo Tikki Burger<img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
 
-                                <span class="menu-item-price">₹40</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button id="plbtn"  class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <input id="mbtn" type="text" name="name" value="0" style="text-align:center;">
-                            <button  class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <button onclick="addtocart()"  style="height: 25px; width: 25px; margin-bottom: 10px;"></button>
-                            <hr>
+                                    <span class="menu-item-price" id="b1-price">₹40</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button id="atb-btn" class="plus-butn" type="button" value="Aloo Tikki Burger">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <input readonly id="mbtn" type="text" name="name" value="0" style="text-align:center;">
+                                <button id="atb-btn-min" class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #ff721a;">
+                                    <span id="b2" class="menu-item-name" style="color: #ff721a;">Herb Chilli Potato
+                                        Burger<img src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+                                    <span class="menu-item-price">₹50</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button id="hcpb-btn" class="plus-butn" type="button" value="Aloo Tikki Burger">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <input readonly id="mbtn" type="text" name="name" value="0" style="text-align:center;">
+                                <button id="hcpb-btn-min" class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #ff721a;">
+                                    <span id="b3" class="menu-item-name" style="color: #ff721a;">Veg Burger<img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+                                    <span class="menu-item-price">₹45</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button id="vb-btn" class="plus-butn" type="button" value="Aloo Tikki Burger">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <input readonly id="mbtn" type="text" name="name" value="0" style="text-align:center;">
+                                <button id="vb-btn-min" class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #ff721a;">
+                                    <span id="b4" class="menu-item-name" style="color: #ff721a;">Schezwan Burger<img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+                                    <span class="menu-item-price">₹50</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button id="sb-btn" class="plus-butn" type="button" value="Aloo Tikki Burger">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <input readonly id="mbtn" type="text" name="name" value="0" style="text-align:center;">
+                                <button id="sb-btn-min" class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #ff721a;">
+                                    <span id="b5" class="menu-item-name" style="color: #ff721a;">Paneer Burger<img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+                                    <span class="menu-item-price">₹60</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button id="pb-btn" class="plus-butn" type="button" value="Aloo Tikki Burger">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <input readonly id="mbtn" type="text" name="name" value="0" style="text-align:center;">
+                                <button id="pb-btn-min" class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #ff721a;">
+                                    <span id="b6" class="menu-item-name" style="color: #ff721a;">Chicken Schezwan
+                                        Burger<img src="./nvg.png" alt="" height="35px" width="35px"></span>
+                                    <span class="menu-item-price">₹70</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button id="csb-btn" class="plus-butn" type="button" value="Aloo Tikki Burger">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <input readonly id="mbtn" type="text" name="name" value="0" style="text-align:center;">
+                                <button id="csb-btn-min" class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #ff721a;">
+                                    <span id="b7" class="menu-item-name" style="color: #ff721a;">Chicken Burger<img
+                                            src="./nvg.png" alt="" height="35px" width="35px"></span>
+                                    <span class="menu-item-price">₹70</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button id="cb-btn" class="plus-butn" type="button" value="Aloo Tikki Burger">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <input readonly id="mbtn" type="text" name="name" value="0" style="text-align:center;">
+                                <button id="cb-btn-min" class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-item">
+                </section>
+                <section id="sandwitches">
+                    <h2 class="menu-group-heading">
+                        Sandwitches
+                    </h2>
+                    <div class="menu-group">
+                        <div class="menu-item">
 
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #ff721a;">
-                                <span class="menu-item-name" style="color: #ff721a;">Herb Chilli Potato Burger<img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-                                <span class="menu-item-price">₹50</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #15B6FC;">
+                                    <span class="menu-item-name" style="color: #15B6FC;">Veg Sandwitch <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹40</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button id="atb-btn" class="plus-butn" type="button" value="Aloo Tikki Burger">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <input readonly id="mbtn" type="text" name="name" value="0" style="text-align:center;">
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #15B6FC;">
+                                    <span class="menu-item-name" style="color: #15B6FC;">Tadka Sandwitch <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹45</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #15B6FC;">
+                                    <span class="menu-item-name" style="color: #15B6FC;">Schezwan Sandwitch <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹45</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #15B6FC;">
+                                    <span class="menu-item-name" style="color: #15B6FC;">Chocolate Sandwitch <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹55</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #15B6FC;">
+                                    <span class="menu-item-name" style="color: #15B6FC;">Paneer Sandwitch <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹55</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #15B6FC;">
+                                    <span class="menu-item-name" style="color: #15B6FC;">Corn Sandwitch <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹45</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #15B6FC;">
+                                    <span class="menu-item-name" style="color: #15B6FC;">Cutlet Sandwitch <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹60</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #15B6FC;">
+                                    <span class="menu-item-name" style="color: #15B6FC;">Pizza Sandwitch <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹60</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #15B6FC;">
+                                    <span class="menu-item-name" style="color: #15B6FC;">Garlic Toast <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹40</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #15B6FC;">
+                                    <span class="menu-item-name" style="color: #15B6FC;"> Tadka Toast <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹40</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #15B6FC;">
+                                    <span class="menu-item-name" style="color: #15B6FC;"> Bread Butter <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹30</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #15B6FC;">
+                                    <span class="menu-item-name" style="color: #15B6FC;">Chicket Cutlet Sandwitch <img
+                                            src="./nvg.png" alt="" height="35px" width="35px"></span>
+
+                                    <span class="menu-item-price">₹80</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #15B6FC;">
+                                    <span class="menu-item-name" style="color: #15B6FC;">Chicken Schezwan Sandwitch <img
+                                            src="./nvg.png" alt="" height="35px" width="35px"></span>
+
+                                    <span class="menu-item-price">₹80</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #15B6FC;">
+                                    <span class="menu-item-name" style="color: #15B6FC;">Egg Mayo Sandwitch <img
+                                            src="./nvg.png" alt="" height="35px" width="35px"></span>
+
+                                    <span class="menu-item-price">₹60</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-item">
+                </section>
+                <section id="pizzas">
+                    <h2 class="menu-group-heading">
+                        Pizzas
+                    </h2>
+                    <div class="menu-group">
+                        <div class="menu-item">
 
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #ff721a;">
-                                <span class="menu-item-name" style="color: #ff721a;">Veg Burger<img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-                                <span class="menu-item-price">₹45</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #D65F10;">
+                                    <span class="menu-item-name" style="color: #D65F10;"> Plain Cheese Pizza <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹70</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #D65F10;">
+                                    <span class="menu-item-name" style="color: #D65F10;"> Veg Cheese Pizza <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹80</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #D65F10;">
+                                    <span class="menu-item-name" style="color: #D65F10;"> Veg Corn Cheese Pizza <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹80</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #D65F10;">
+                                    <span class="menu-item-name" style="color: #D65F10;"> Veg Schezwan Cheese Pizza <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹80</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #D65F10;">
+                                    <span class="menu-item-name" style="color: #D65F10;"> Veg Paneer Cheese Pizza <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹80</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #D65F10;">
+                                    <span class="menu-item-name" style="color: #D65F10;"> Special Creamy Nuts Pizza <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹120</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #D65F10;">
+                                    <span class="menu-item-name" style="color: #D65F10;"> Chicken Cheese Pizza <img
+                                            src="./nvg.png" alt="" height="35px" width="35px"></span>
+
+                                    <span class="menu-item-price">₹120</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #D65F10;">
+                                    <span class="menu-item-name" style="color: #D65F10;"> Chicken Schezwan Pizza <img
+                                            src="./nvg.png" alt="" height="35px" width="35px"></span>
+
+                                    <span class="menu-item-price">₹0</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-item">
+                </section>
+                <section id="indian">
+                    <h2 class="menu-group-heading">
+                        Indian
+                    </h2>
+                    <div class="menu-group">
+                        <div class="menu-item">
 
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #ff721a;">
-                                <span class="menu-item-name" style="color: #ff721a;">Schezwan Burger<img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-                                <span class="menu-item-price">₹50</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #fc4103;">
+                                    <span class="menu-item-name" style="color: #fc4103;"> Pav Bhaji <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹60</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #fc4103;">
+                                    <span class="menu-item-name" style="color: #fc4103;"> Cheese Pav Bhaji <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹75</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #fc4103;">
+                                    <span class="menu-item-name" style="color: #fc4103;"> Wada Pav <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹15</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #fc4103;">
+                                    <span class="menu-item-name" style="color: #fc4103;"> Bhaji <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹20</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #fc4103;">
+                                    <span class="menu-item-name" style="color: #fc4103;"> Misal <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹60</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #fc4103;">
+                                    <span class="menu-item-name" style="color: #fc4103;"> Masala Tak <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹15</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #fc4103;">
+                                    <span class="menu-item-name" style="color: #fc4103;"> Sabudana Wada <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹50</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #fc4103;">
+                                    <span class="menu-item-name" style="color: #fc4103;"> Pohe <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹20</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #fc4103;">
+                                    <span class="menu-item-name" style="color: #fc4103;"> Chicken Biryani <img
+                                            src="./nvg.png" alt="" height="35px" width="35px"></span>
+
+                                    <span class="menu-item-price">₹120</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #fc4103;">
+                                    <span class="menu-item-name" style="color: #fc4103;"> Bread Omelette <img
+                                            src="./nvg.png" alt="" height="35px" width="35px"></span>
+
+                                    <span class="menu-item-price">₹60</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #fc4103;">
+                                    <span class="menu-item-name" style="color: #fc4103;"> Bread Bhurji <img
+                                            src="./nvg.png" alt="" height="35px" width="35px"></span>
+
+                                    <span class="menu-item-price">₹60</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #fc4103;">
+                                    <span class="menu-item-name" style="color: #fc4103;"> Egg Rice <img src="./nvg.png"
+                                            alt="" height="35px" width="35px"></span>
+
+                                    <span class="menu-item-price">₹70</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-item">
+                </section>
+                <section id="sides">
+                    <h2 class="menu-group-heading">
+                        Sides
+                    </h2>
+                    <div class="menu-group">
+                        <div class="menu-item">
 
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #ff721a;">
-                                <span class="menu-item-name" style="color: #ff721a;">Paneer Burger<img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-                                <span class="menu-item-price">₹60</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #78FECF;">
+                                    <span class="menu-item-name" style="color: #78FECF;"> Plain/Masala Maggi <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹40</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #78FECF;">
+                                    <span class="menu-item-name" style="color: #78FECF;"> Veg Maggi <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹45</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #78FECF;">
+                                    <span class="menu-item-name" style="color: #78FECF;"> PeriPeri Maggi <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹50</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #78FECF;">
+                                    <span class="menu-item-name" style="color: #78FECF;"> Tadka Maggi <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹50</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #78FECF;">
+                                    <span class="menu-item-name" style="color: #78FECF;"> Corn Maggi <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹50</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #78FECF;">
+                                    <span class="menu-item-name" style="color: #78FECF;"> Veg Nuggets <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹60</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #78FECF;">
+                                    <span class="menu-item-name" style="color: #78FECF;"> Cheese Balls <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹60</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #78FECF;">
+                                    <span class="menu-item-name" style="color: #78FECF;"> Cheese Corn Nuggets <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹60</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #78FECF;">
+                                    <span class="menu-item-name" style="color: #78FECF;"> Chicken Nuggets <img
+                                            src="./nvg.png" alt="" height="35px" width="35px"></span>
+
+                                    <span class="menu-item-price">₹80</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #78FECF;">
+                                    <span class="menu-item-name" style="color: #78FECF;"> Chicken Garlic Fingers <img
+                                            src="./nvg.png" alt="" height="35px" width="35px"></span>
+
+                                    <span class="menu-item-price">₹80</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #78FECF;">
+                                    <span class="menu-item-name" style="color: #78FECF;"> French Fries <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹60</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #78FECF;">
+                                    <span class="menu-item-name" style="color: #78FECF;"> Cheese Fries <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹70</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #78FECF;">
+                                    <span class="menu-item-name" style="color: #78FECF;"> Peri Peri Fries <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹70</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #78FECF;">
+                                    <span class="menu-item-name" style="color: #78FECF;"> Masala Fries <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹80</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #78FECF;">
+                                    <span class="menu-item-name" style="color: #78FECF;"> Veg Momos <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹80</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #78FECF;">
+                                    <span class="menu-item-name" style="color: #78FECF;"> Non-Veg Momos <img
+                                            src="./nvg.png" alt="" height="35px" width="35px"></span>
+
+                                    <span class="menu-item-price">₹100</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-item">
+                </section>
+                <section id="dessert">
+                    <h2 class="menu-group-heading">
+                        Brownies
+                    </h2>
+                    <div class="menu-group">
+                        <div class="menu-item">
 
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #ff721a;">
-                                <span class="menu-item-name" style="color: #ff721a;">Chicken Schezwan Burger<img
-                                        src="./nvg.png" alt="" height="35px" width="35px"></span>
-                                <span class="menu-item-price">₹70</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #FC1581;">
+                                    <span class="menu-item-name" style="color: #FC1581;">Brownie w'Thunder <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹100</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+
+                            <div class="menu-item-text">
+                                <h3 class="menu-item-heading" style="color: #FC1581;">
+                                    <span class="menu-item-name" style="color: #FC1581;">Dry Fruit Brownie <img
+                                            src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
+                                            width="35px"></span>
+
+                                    <span class="menu-item-price">₹120</span>
+                                </h3>
+                                <p class="menu-item-description" style="color: #ffffff;">
+                                    Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci
+                                    risus,
+                                    congue eu mauris nec, pretium tincidunt nulla.
+                                </p>
+                                <button class="minus-butn" type="button" name="button">
+                                    <img src="minus.svg" alt="" />
+                                </button>
+                                <input readonly type="text" name="name" value="0" style="text-align:center;">
+                                <button class="plus-butn" type="button" name="button">
+                                    <img src="plus.svg" alt="" />
+                                </button>
+                                <hr>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #ff721a;">
-                                <span class="menu-item-name" style="color: #ff721a;">Chicken Burger<img src="./nvg.png"
-                                        alt="" height="35px" width="35px"></span>
-                                <span class="menu-item-price">₹70</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="sandwitches">
-                <h2 class="menu-group-heading">
-                    Sandwitches
-                </h2>
-                <div class="menu-group">
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #15B6FC;">
-                                <span class="menu-item-name" style="color: #15B6FC;">Veg Sandwitch <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹40</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #15B6FC;">
-                                <span class="menu-item-name" style="color: #15B6FC;">Tadka Sandwitch <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹45</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #15B6FC;">
-                                <span class="menu-item-name" style="color: #15B6FC;">Schezwan Sandwitch <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹45</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #15B6FC;">
-                                <span class="menu-item-name" style="color: #15B6FC;">Chocolate Sandwitch <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹55</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #15B6FC;">
-                                <span class="menu-item-name" style="color: #15B6FC;">Paneer Sandwitch <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹55</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #15B6FC;">
-                                <span class="menu-item-name" style="color: #15B6FC;">Corn Sandwitch <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹45</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #15B6FC;">
-                                <span class="menu-item-name" style="color: #15B6FC;">Cutlet Sandwitch <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹60</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #15B6FC;">
-                                <span class="menu-item-name" style="color: #15B6FC;">Pizza Sandwitch <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹60</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #15B6FC;">
-                                <span class="menu-item-name" style="color: #15B6FC;">Garlic Toast <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹40</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #15B6FC;">
-                                <span class="menu-item-name" style="color: #15B6FC;"> Tadka Toast <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹40</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #15B6FC;">
-                                <span class="menu-item-name" style="color: #15B6FC;"> Bread Butter <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹30</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #15B6FC;">
-                                <span class="menu-item-name" style="color: #15B6FC;">Chicket Cutlet Sandwitch <img
-                                        src="./nvg.png" alt="" height="35px" width="35px"></span>
-
-                                <span class="menu-item-price">₹80</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #15B6FC;">
-                                <span class="menu-item-name" style="color: #15B6FC;">Chicken Schezwan Sandwitch <img
-                                        src="./nvg.png" alt="" height="35px" width="35px"></span>
-
-                                <span class="menu-item-price">₹80</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #15B6FC;">
-                                <span class="menu-item-name" style="color: #15B6FC;">Egg Mayo Sandwitch <img
-                                        src="./nvg.png" alt="" height="35px" width="35px"></span>
-
-                                <span class="menu-item-price">₹60</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="pizzas">
-                <h2 class="menu-group-heading">
-                    Pizzas
-                </h2>
-                <div class="menu-group">
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #D65F10;">
-                                <span class="menu-item-name" style="color: #D65F10;"> Plain Cheese Pizza <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹70</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #D65F10;">
-                                <span class="menu-item-name" style="color: #D65F10;"> Veg Cheese Pizza <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹80</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #D65F10;">
-                                <span class="menu-item-name" style="color: #D65F10;"> Veg Corn Cheese Pizza <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹80</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #D65F10;">
-                                <span class="menu-item-name" style="color: #D65F10;"> Veg Schezwan Cheese Pizza <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹80</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #D65F10;">
-                                <span class="menu-item-name" style="color: #D65F10;"> Veg Paneer Cheese Pizza <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹80</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #D65F10;">
-                                <span class="menu-item-name" style="color: #D65F10;"> Special Creamy Nuts Pizza <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹120</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #D65F10;">
-                                <span class="menu-item-name" style="color: #D65F10;"> Chicken Cheese Pizza <img
-                                        src="./nvg.png" alt="" height="35px" width="35px"></span>
-
-                                <span class="menu-item-price">₹120</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #D65F10;">
-                                <span class="menu-item-name" style="color: #D65F10;"> Chicken Schezwan Pizza <img
-                                        src="./nvg.png" alt="" height="35px" width="35px"></span>
-
-                                <span class="menu-item-price">₹0</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="indian">
-                <h2 class="menu-group-heading">
-                    Indian
-                </h2>
-                <div class="menu-group">
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #fc4103;">
-                                <span class="menu-item-name" style="color: #fc4103;"> Pav Bhaji <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹60</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #fc4103;">
-                                <span class="menu-item-name" style="color: #fc4103;"> Cheese Pav Bhaji <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹75</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #fc4103;">
-                                <span class="menu-item-name" style="color: #fc4103;"> Wada Pav <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹15</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #fc4103;">
-                                <span class="menu-item-name" style="color: #fc4103;"> Bhaji <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹20</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #fc4103;">
-                                <span class="menu-item-name" style="color: #fc4103;"> Misal <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹60</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #fc4103;">
-                                <span class="menu-item-name" style="color: #fc4103;"> Masala Tak <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹15</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #fc4103;">
-                                <span class="menu-item-name" style="color: #fc4103;"> Sabudana Wada <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹50</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #fc4103;">
-                                <span class="menu-item-name" style="color: #fc4103;"> Pohe <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹20</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #fc4103;">
-                                <span class="menu-item-name" style="color: #fc4103;"> Chicken Biryani <img
-                                        src="./nvg.png" alt="" height="35px" width="35px"></span>
-
-                                <span class="menu-item-price">₹120</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #fc4103;">
-                                <span class="menu-item-name" style="color: #fc4103;"> Bread Omelette <img
-                                        src="./nvg.png" alt="" height="35px" width="35px"></span>
-
-                                <span class="menu-item-price">₹60</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #fc4103;">
-                                <span class="menu-item-name" style="color: #fc4103;"> Bread Bhurji <img src="./nvg.png"
-                                        alt="" height="35px" width="35px"></span>
-
-                                <span class="menu-item-price">₹60</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #fc4103;">
-                                <span class="menu-item-name" style="color: #fc4103;"> Egg Rice <img src="./nvg.png"
-                                        alt="" height="35px" width="35px"></span>
-
-                                <span class="menu-item-price">₹70</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="sides">
-                <h2 class="menu-group-heading">
-                    Sides
-                </h2>
-                <div class="menu-group">
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #78FECF;">
-                                <span class="menu-item-name" style="color: #78FECF;"> Plain/Masala Maggi <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹40</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #78FECF;">
-                                <span class="menu-item-name" style="color: #78FECF;"> Veg Maggi <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹45</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #78FECF;">
-                                <span class="menu-item-name" style="color: #78FECF;"> PeriPeri Maggi <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹50</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #78FECF;">
-                                <span class="menu-item-name" style="color: #78FECF;"> Tadka Maggi <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹50</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #78FECF;">
-                                <span class="menu-item-name" style="color: #78FECF;"> Corn Maggi <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹50</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #78FECF;">
-                                <span class="menu-item-name" style="color: #78FECF;"> Veg Nuggets <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹60</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #78FECF;">
-                                <span class="menu-item-name" style="color: #78FECF;"> Cheese Balls <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹60</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #78FECF;">
-                                <span class="menu-item-name" style="color: #78FECF;"> Cheese Corn Nuggets <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹60</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #78FECF;">
-                                <span class="menu-item-name" style="color: #78FECF;"> Chicken Nuggets <img
-                                        src="./nvg.png" alt="" height="35px" width="35px"></span>
-
-                                <span class="menu-item-price">₹80</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #78FECF;">
-                                <span class="menu-item-name" style="color: #78FECF;"> Chicken Garlic Fingers <img
-                                        src="./nvg.png" alt="" height="35px" width="35px"></span>
-
-                                <span class="menu-item-price">₹80</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #78FECF;">
-                                <span class="menu-item-name" style="color: #78FECF;"> French Fries <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹60</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #78FECF;">
-                                <span class="menu-item-name" style="color: #78FECF;"> Cheese Fries <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹70</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #78FECF;">
-                                <span class="menu-item-name" style="color: #78FECF;"> Peri Peri Fries <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹70</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #78FECF;">
-                                <span class="menu-item-name" style="color: #78FECF;"> Masala Fries <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹80</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #78FECF;">
-                                <span class="menu-item-name" style="color: #78FECF;"> Veg Momos <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹80</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #78FECF;">
-                                <span class="menu-item-name" style="color: #78FECF;"> Non-Veg Momos <img src="./nvg.png"
-                                        alt="" height="35px" width="35px"></span>
-
-                                <span class="menu-item-price">₹100</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="dessert">
-                <h2 class="menu-group-heading">
-                    Brownies
-                </h2>
-                <div class="menu-group">
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #FC1581;">
-                                <span class="menu-item-name" style="color: #FC1581;">Brownie w'Thunder <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹100</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-
-                        <div class="menu-item-text">
-                            <h3 class="menu-item-heading" style="color: #FC1581;">
-                                <span class="menu-item-name" style="color: #FC1581;">Dry Fruit Brownie <img
-                                        src="./icons8-vegetarian-food-symbol-48.png" alt="" height="35px"
-                                        width="35px"></span>
-
-                                <span class="menu-item-price">₹120</span>
-                            </h3>
-                            <p class="menu-item-description" style="color: #ffffff;">
-                                Nunc efficitur felis vel mi efficitur, sed molestie sem scelerisque. Fusce orci risus,
-                                congue eu mauris nec, pretium tincidunt nulla.
-                            </p>
-                            <button class="minus-butn" type="button" name="button">
-                                <img src="minus.svg" alt="" />
-                            </button>
-                            <input type="text" name="name" value="0" style="text-align:center;">
-                            <button class="plus-butn" type="button" name="button">
-                                <img src="plus.svg" alt="" />
-                            </button>
-                            <hr>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <button class="btn btn-primary sticky-bottom" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Check your Cart</button>
-
-        <div class="offcanvas offcanvas-bottom bg-dark" tabindex="-1" id="offcanvasBottom"
-            aria-labelledby="offcanvasBottomLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title text-warning" id="offcanvasBottomLabel">Cart Summary</h5>
-                <button type="button" class="btn-close bg-warning" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
+                </section>
             </div>
-            <div class="offcanvas-body small text-light">
-                <table class="table table-dark table-striped">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Item</th>
-                            <th scope="col">Quantity</th>
-                            <th scope="col">Price</th>
-                        </tr>
-                    </thead>
-                    <tbody id="thed">
-                        
-                    </tbody>
-                </table>
+
+            <button class="btn btn-primary sticky-bottom" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Check your Cart</button>
+
+            <div class="offcanvas offcanvas-bottom bg-dark" tabindex="-1" id="offcanvasBottom"
+                aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-warning" id="offcanvasBottomLabel">Cart Summary</h5>
+                    <button type="button" class="btn-close bg-warning" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body small text-light">
+                    <table class="table table-dark table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Item</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-body">
+
+                        </tbody><br>
+                    </table>
+                    <p  style="color: #ffffff;">Total: <span id="total"></span></p>
+                </div>
+
+
+
+                <button type="button" class="btn btn-outline-warning">Proceed to checkout</button>
             </div>
-
-
-
-            <button type="button" class="btn btn-outline-warning">Proceed to checkout</button>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
@@ -1606,7 +1675,46 @@
             });
         </script>
 
-        <script type="text/javascript" src="./js/cart.js"></script>
+        <script type="text/javascript" src="./js/cart2.js"></script>
+
+
 </body>
+<footer style="background-color: #fc4103;">
+    <div class="social">
+        <p style="font-size: medium;">Follow me on social media</p>
+        <ul class="wrapper">
+
+            <a href="#" target="_blank">
+                <li class="icon linkedin">
+                    <span><i class="fab fa-linkedin"></i></span>
+                </li>
+            </a>
+            <a href="#" target="_blank">
+                <li class="icon github">
+                    <span><i class="fab fa-github"></i></span>
+                </li>
+            </a>
+            <a href="#" target="_blank">
+                <li class="icon facebook">
+                    <span><i class="fab fa-facebook-f"></i></span>
+                </li>
+            </a>
+            <a href="#" target="_blank">
+                <li class="icon instagram">
+                    <span><i class="fab fa-instagram"></i></span>
+                </li>
+            </a>
+            <a href="#" target="_blank">
+                <li class="icon twitter">
+                    <span><i class="fab fa-twitter"></i></span>
+                </li>
+            </a>
+        </ul>
+    </div>
+    <div class="final_text"></div>
+    <p style="font-size: medium;">Copyright &copy; All rights reserved
+        <br>Designed web master, 2022
+    </p>
+</footer>
 
 </html>

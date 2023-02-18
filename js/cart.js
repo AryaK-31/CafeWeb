@@ -1,7 +1,7 @@
 var cnt = 0;
 function addtocart() {
-    cnt = cnt + 1; 
     x = document.getElementById("mbtn").value;
+    cnt = cnt + 1; 
     const node1 = document.createElement("tr");
     const th0 = document.createElement("th");
     const td1 = document.createElement("td");

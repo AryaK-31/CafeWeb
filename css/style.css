@@ -261,62 +261,6 @@ form ::placeholder{
     background:none;
 }
 
-.footer{
-    background:#313131;
-    text-align: center;
-}
-
-.footer .share{
-    padding:1rem 0;
-    
-}
-
-
-.footer .share a{
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
-    font-size: 2rem;
-    background-color: #ffca1d;
-    color:#000000;
-    border:var(--border1);
-    margin:.3rem;
-    border-radius: 50%;
-}
-
-.footer .links{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding:2rem 0;
-    gap:1rem;
-    
-}
-
-.footer .links a{
-    padding:.7rem 2rem;
-    background-color: #ffca1d;
-    color:#000000;
-    border:var(--border1);
-    font-size: 2rem;
-    border-radius: 20px;
-}
-
-
-
-.footer .credit{
-    font-size: 2rem;
-    color:#fff;
-    font-weight: lighter;
-    padding:1.5rem;
-}
-
-.footer .credit span{
-    color:var(--main-color);
-}
-
-
-
 
 @media (max-width:991px){
 
@@ -367,7 +311,7 @@ form ::placeholder{
 
 }
 
-@media (max-width:393px){
+@media (min-width:300px) and (max-width : 700px){
     
 
     html{
@@ -379,6 +323,7 @@ form ::placeholder{
         background-image: url(../images/burg.jpg);
         background-repeat: no-repeat;
         background-position: center;
+        object-fit: cover;
     }
 
     .navb {
@@ -496,3 +441,133 @@ form ::placeholder{
 
 
 
+/* @media (max-width : 768px){
+    
+
+    html{
+        font-size: 50%;
+        
+    }
+
+    .home{
+        background-image: url(../images/burg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+    }
+
+    .navb {
+        text-align: center;
+
+    }
+    .home .content h3{
+        text-align: center;
+        margin-bottom: 390px;
+    }
+   
+    .home .content p {
+        
+        font-family: "Montserrat Medium";
+        max-width:100vh;
+        justify-content: center;
+        text-align: center;
+        transform: scale(0.94);
+        animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+        font-size:3.0rem;
+        color: #ffca1d;
+        font-weight: 400;
+      }
+      @keyframes scale {
+        100% {
+          transform: scale(1);
+        }
+      }
+      
+      span {
+        display: inline-block;
+        font-size: larger;
+        opacity: 0;
+        filter: blur(4px);
+      }
+      
+      span:nth-child(1) {
+        animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        
+      }
+      
+      span:nth-child(2) {
+        animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(3) {
+        animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(4) {
+        animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(5) {
+        animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(6) {
+        animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(7) {
+        animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(8) {
+        animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(9) {
+        animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(10) {
+        animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(11) {
+        animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(12) {
+        animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(13) {
+        animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(14) {
+        animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(15) {
+        animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(16) {
+        animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(17) {
+        animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      span:nth-child(18) {
+        animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      
+      @keyframes fade-in {
+        100% {
+          opacity: 1;
+          filter: blur(0);
+        }
+      }
+
+} */
